@@ -30,13 +30,8 @@ API docs are available at `http://localhost:8000/docs`.
 - `GET /members/{id}` — Get a member by ID
 - `POST /members` — Register a new member
 
-### Borrowings
-- `GET /borrowings` — List all borrowings
-- `POST /borrowings` — Borrow a book
-
 ## Data
 
 Data is stored as JSON files in the `data/` directory:
 - `books.json` — Book catalogue
 - `members.json` — Library members
-- `borrowings.json` — Borrowing records

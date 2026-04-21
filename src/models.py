@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel
 
 
 class BookCreate(BaseModel):
@@ -20,17 +20,3 @@ class MemberCreate(BaseModel):
 class Member(MemberCreate):
     id: int
     member_since: str
-
-
-class BorrowRequest(BaseModel):
-    book_id: int
-    member_id: int
-
-
-class Borrowing(BaseModel):
-    id: int
-    book_id: int
-    member_id: int
-    borrow_date: str
-    due_date: str
-    returned_date: str | None = None
