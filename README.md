@@ -2,16 +2,37 @@
 
 A simple library book lending system API.
 
+## Prerequisites
+
+- Python 3.11+
+
 ## Setup
 
+### Using uv (recommended)
+
 ```bash
+pip install uv
 uv sync
+```
+
+### Using pip
+
+```bash
+pip install fastapi uvicorn
 ```
 
 ## Running
 
+### Using uv
+
 ```bash
 uv run uvicorn src.main:app --reload
+```
+
+### Using pip
+
+```bash
+uvicorn src.main:app --reload
 ```
 
 The API will be available at `http://localhost:8000`.
